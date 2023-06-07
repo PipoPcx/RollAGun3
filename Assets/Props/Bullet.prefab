@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9004486822816732415}
   - component: {fileID: 7478286542671707613}
   - component: {fileID: -4911497816031754613}
-  - component: {fileID: -3107530983990610401}
+  - component: {fileID: 247879784636002765}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: bala
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211a9d92383a2004085e2a556f62fcf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-3107530983990610401
+--- !u!114 &247879784636002765
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,5 +140,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b6b2502fde863c4382ad43524a670b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 10
+  velocidad: 50
   "da\xF1o": 10

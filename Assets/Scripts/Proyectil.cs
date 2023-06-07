@@ -1,4 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
+
 
 public class Proyectil : MonoBehaviour
 {
@@ -7,7 +11,7 @@ public class Proyectil : MonoBehaviour
 
     private void Update()
     {
-        // Mover el proyectil hacia adelante
+        
         transform.Translate(Vector3.forward * velocidad * Time.deltaTime);
     }
 
