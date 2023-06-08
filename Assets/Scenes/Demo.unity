@@ -5450,7 +5450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2098778031}
   distanciaDisparo: 10
-  anguloMaximo: 70
+  anguloMaximo: 90
   proyectilPrefab: {fileID: 8176393030851021182, guid: 77e6e3a5792bfd049a26a1353ab1caad, type: 3}
   puntoDisparo: {fileID: 1388150381}
   velocidadRotacion: 5
