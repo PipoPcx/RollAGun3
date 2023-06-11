@@ -15,7 +15,7 @@ MonoBehaviour:
   active: 0
   screenBendX:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 0.27
   screenBendY:
     m_OverrideState: 1
     m_Value: 3
@@ -36,10 +36,10 @@ MonoBehaviour:
     m_Value: 200
   scanlinesSpeed:
     m_OverrideState: 1
-    m_Value: 200
+    m_Value: -186.3
   noiseAmount:
     m_OverrideState: 1
-    m_Value: 250
+    m_Value: 100
   chromaticRed:
     m_OverrideState: 1
     m_Value: {x: 0.001, y: -0.001}
