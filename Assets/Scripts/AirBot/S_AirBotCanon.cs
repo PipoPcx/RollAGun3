@@ -9,7 +9,7 @@ public class S_AirBotCanon : MonoBehaviour
 
     private void Start() {
 
-        player = GameObject.FindWithTag("Player");
+        player = GameObject.FindWithTag("pivotplayer");
     }
 
     private void Update() {

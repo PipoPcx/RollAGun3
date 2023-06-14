@@ -8,6 +8,7 @@ TagManager:
   - sas
   - Kinetic
   - Bullet
+  - pivotplayer
   layers:
   - Default
   - TransparentFX
