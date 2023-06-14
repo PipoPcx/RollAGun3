@@ -7149,7 +7149,7 @@ MonoBehaviour:
   distanceToAway: 10
   additionalSpace: 5
   pursuitSpeed: 3
-  smoothness: 1
+  smoothness: 0.3
   xzMaxOffset: 3000
   yMaxOffset: 40
   rInterval: 0.3
@@ -11196,13 +11196,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1048135932}
-  distanciaDisparo: 15
-  anguloMaximo: 0
+  distanciaDisparo: 10
+  anguloMaximo: 45
   proyectilPrefab: {fileID: 1964237550348949789, guid: d92c4cb586256da498626c8aae09f73e, type: 3}
   puntoDisparo: {fileID: 46195761}
-  velocidadRotacion: 0
-  tiempoEntreDisparos: 0.7
-  vidaMaxima: 1
+  velocidadRotacion: 5
+  tiempoEntreDisparos: 1
+  vidaMaxima: 3
 --- !u!1 &1483835289
 GameObject:
   m_ObjectHideFlags: 0
