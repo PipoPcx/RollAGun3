@@ -9,6 +9,7 @@ TagManager:
   - Kinetic
   - Bullet
   - pivotplayer
+  - Pared
   layers:
   - Default
   - TransparentFX
