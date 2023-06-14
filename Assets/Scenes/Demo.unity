@@ -10941,10 +10941,8 @@ MonoBehaviour:
   m_VersionIndex: 7599
   m_IsSelectable: 1
   m_SelectedFaces: 
-  m_SelectedEdges:
-  - a: 103
-    b: 100
-  m_SelectedVertices: 6700000064000000
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!1001 &1505868662
 PrefabInstance:
   m_ObjectHideFlags: 0
