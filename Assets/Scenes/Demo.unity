@@ -6500,7 +6500,7 @@ MonoBehaviour:
   distanceToAway: 10
   additionalSpace: 5
   pursuitSpeed: 3
-  smoothness: 0.3
+  smoothness: 1
   xzMaxOffset: 3000
   yMaxOffset: 40
   rInterval: 0.3
@@ -7212,7 +7212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 908947ee25188e94ba879641a69c0199, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 908947ee25188e94ba879641a69c0199, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9439,13 +9439,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1048135932}
-  distanciaDisparo: 10
-  anguloMaximo: 45
+  distanciaDisparo: 15
+  anguloMaximo: 0
   proyectilPrefab: {fileID: 1964237550348949789, guid: d92c4cb586256da498626c8aae09f73e, type: 3}
   puntoDisparo: {fileID: 46195761}
-  velocidadRotacion: 5
-  tiempoEntreDisparos: 1
-  vidaMaxima: 3
+  velocidadRotacion: 0
+  tiempoEntreDisparos: 0.7
+  vidaMaxima: 1
 --- !u!1 &1483835289
 GameObject:
   m_ObjectHideFlags: 0
@@ -10805,7 +10805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4597173095758855323, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4632848467290693970, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: fPC
