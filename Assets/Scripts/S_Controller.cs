@@ -197,7 +197,7 @@ public class S_Controller : MonoBehaviour
                 lineRenderer.SetPosition(0, transform.position);
                 lineRenderer.SetPosition(1, hookPos);
 
-                if (Vector3.Distance(transform.position, hook.transform.position) <= 1f)
+                if (Vector3.Distance(transform.position, hook.transform.position) <= 3f)
                 {
 
                     StopGrapplingHook();
