@@ -33,8 +33,6 @@ public class S_gun : MonoBehaviour
     [SerializeField]
     private float lastTimeShot;
 
-    [SerializeField]
-    private float timeBeforeDestroy = 1f;
 
     public S_Controller controller;
 

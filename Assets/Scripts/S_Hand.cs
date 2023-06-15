@@ -25,9 +25,10 @@ public class S_Hand : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0)) {
+        if (Input.GetMouseButtonDown(0))
+        {
 
-            
+
             Debug.Log(currentIndex);
 
             //if(currentIndex >= textList.Count) {
@@ -38,8 +39,19 @@ public class S_Hand : MonoBehaviour
             UpdateText();
             PlayAnimations();
         }
-    }
 
+        if (currentIndex >= animationList.Count)
+        {
+
+            currentIndex = 0;
+        }
+
+        if (currentIndex >= textList.Count)
+        {
+
+            currentIndex = 0;
+        }
+    }
     private void UpdateText() { 
     
         if(textController != null) { 

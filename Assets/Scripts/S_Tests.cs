@@ -18,8 +18,7 @@ public class S_Tests : MonoBehaviour
     private float grapplingSpeed = 10f;
     [SerializeField]
     private float hookMaxDistance = 70f;
-    [SerializeField]
-    private float hookMinDistance = 3f;
+   
     private RaycastHit hitInfo;
     [SerializeField]
     private GameObject hook;
