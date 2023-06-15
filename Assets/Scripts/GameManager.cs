@@ -169,7 +169,7 @@ public class GameManager : MonoBehaviour
     IEnumerator CambiarEscena()
     {
 
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(5);
         SceneManager.LoadScene("Demo");
 
         yield return null; // Espera un frame, esto sirve para que el código se reproduzca tras el cambio de escena. Sin esta linea, lo demás de la corrutina no funciona
