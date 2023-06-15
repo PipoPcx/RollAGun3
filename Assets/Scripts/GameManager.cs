@@ -16,8 +16,9 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        
 
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         if (instance == null)
         {
 
@@ -182,6 +183,8 @@ public class GameManager : MonoBehaviour
 
             GameManager.instance.ActivateWeapon(GameManager.instance.chosenWeapon);
             GameManager.instance.ActivatePower(GameManager.instance.chosenPower);
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 
