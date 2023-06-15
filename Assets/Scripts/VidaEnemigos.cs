@@ -32,5 +32,13 @@ public class VidaEnemigos : MonoBehaviour
             Debug.Log("vidatorreta2");
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Pared"))
+        {
+            Destroy(gameObject); // Destruir la bala
+        }
+    }
 }
 

@@ -29,18 +29,22 @@ public class Torreta : MonoBehaviour
             Destroy(gameObject); // Destruir la torreta
             return;
         }
-     
-        if (Vector3.Distance(transform.position, player.position) <= distanciaDisparo)
-        {
-            Vector3 direccionJugador = player.position - transform.position;
-            float angulo = Vector3.Angle(direccionJugador, Vector3.down);
-            Quaternion rotacion = Quaternion.LookRotation(direccionJugador);
-            transform.rotation = Quaternion.Slerp(transform.rotation, rotacion, velocidadRotacion * Time.deltaTime);
 
-            if (Time.time > tiempoUltimoDisparo + tiempoEntreDisparos && angulo > anguloMaximo)
+        Vector3 direccionJugador = player.position - transform.position;
+        float angulo = Vector3.Angle(direccionJugador, Vector3.down);
+        Quaternion rotacion = Quaternion.LookRotation(direccionJugador);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotacion, velocidadRotacion * Time.deltaTime);
+
+        // Verificar si el jugador está detrás de un objeto con tag "Pared"
+        if (angulo > anguloMaximo && !HayObstruccion(player.position))
+        {
+            if (Vector3.Distance(transform.position, player.position) <= distanciaDisparo)
             {
-                Disparar();
-                tiempoUltimoDisparo = Time.time;
+                if (Time.time > tiempoUltimoDisparo + tiempoEntreDisparos)
+                {
+                    Disparar();
+                    tiempoUltimoDisparo = Time.time;
+                }
             }
         }
     }
@@ -48,7 +52,6 @@ public class Torreta : MonoBehaviour
     private void Disparar()
     {
         // Realizar acciones de disparo
-
         Instantiate(proyectilPrefab, puntoDisparo.position, puntoDisparo.rotation);
     }
 
@@ -61,4 +64,18 @@ public class Torreta : MonoBehaviour
             vidaActual = 0;
         }
     }
+
+    private bool HayObstruccion(Vector3 targetPosition)
+    {
+        RaycastHit hit;
+        if (Physics.Linecast(transform.position, targetPosition, out hit))
+        {
+            if (hit.collider.gameObject.CompareTag("Pared"))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }
+

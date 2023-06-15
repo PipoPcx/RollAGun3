@@ -11,7 +11,7 @@ public class DanoBala : MonoBehaviour
         if (torreta != null)
         {
             torreta.RecibirDano(dano); // Reducir la vida de la torreta
-            Debug.Log("dañobala");
+           
         }
 
         Destroy(gameObject); // Destruir la bala

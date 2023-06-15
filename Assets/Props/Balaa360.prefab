@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 7001795490749348648}
   - component: {fileID: 7652606301171203726}
   - component: {fileID: 60255848668294121}
+  - component: {fileID: -3809296249895345581}
+  - component: {fileID: 321732580718266174}
   m_Layer: 0
   m_Name: Balaa360
   m_TagString: Bullet
@@ -93,7 +95,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2552874050439377462}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -111,4 +113,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  lifetime: 4
+  lifetime: 2
+--- !u!114 &-3809296249895345581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2552874050439377462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: febfa58eb369dbf49b96aa820ba2a8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &321732580718266174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2552874050439377462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 000da509ec267e14d8b78a6d94146112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dano: 1

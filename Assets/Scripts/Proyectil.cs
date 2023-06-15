@@ -15,6 +15,6 @@ public class Proyectil : MonoBehaviour
         transform.Translate(Vector3.forward * velocidad * Time.deltaTime);
     }
 
-   
+
 }
 
